@@ -1,7 +1,7 @@
-FROM postgres:12 AS build
+FROM postgres:12 
 
 RUN apt-get update \
-&& apt-get install -y --no-install-recommends \
+&& apt-get install -y \
 	ca-certificates \
 	make \
 	git \
@@ -12,11 +12,6 @@ RUN apt-get update \
 && cd pgsphere \
 && make USE_PGXS=1 PG_CONFIG=/usr/bin/pg_config \
 && make USE_PGXS=1 PG_CONFIG=/usr/bin/pg_config install 
-
-
-FROM postgres:12
-
-COPY --from=build /usr/lib/postgresql/12/lib/bitcode/pg_sphere /usr/lib/postgresql/12/lib/bitcode/pg_sphere
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 

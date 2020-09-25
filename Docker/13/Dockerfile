@@ -1,7 +1,7 @@
 FROM postgres:13 AS build
 
 RUN apt-get update \
-&& apt-get install -y --no-install-recommends \
+&& apt-get install -y \
 	ca-certificates \
 	make \
 	git \
