@@ -18,12 +18,12 @@ Visit [https://hub.docker.com/r/douchy/pgsphere](https://hub.docker.com/r/douchy
 
 Container available for posgres 12.x and 13.x on Debian and Alpine:
 - Debian
- - postgres 12.x `docker pull douchy/pgsphere:12.0.0`
- - postgres 13.x `docker pull douchy/pgsphere:13.0.0`
+ - postgres 12.x `docker pull douchy/pgsphere:12.0.1`
+ - postgres 13.x `docker pull douchy/pgsphere:13.0.1`
 
 - Alpine
- - postgres 12.x `docker pull douchy/pgsphere:12.0.0-alpine`
- - postgres 13.x `docker pull douchy/pgsphere:13.0.0-alpine`
+ - postgres 12.x `docker pull douchy/pgsphere:12.0.1-alpine`
+ - postgres 13.x `docker pull douchy/pgsphere:13.0.1-alpine`
 
 # Acknowledgments
 
