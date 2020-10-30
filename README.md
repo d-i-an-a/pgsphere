@@ -2,7 +2,7 @@
 
 The following command will start a postgres 12 deamon with the pg_sphere module installed:
 
-`docker run --rm   --name pg-docker -e POSTGRES_PASSWORD=<pass> -d -p 5432:5432 -v <path to store data locally>:/var/lib/postgresql/data  douchy/pgsphere:12.0.0`
+`docker run --rm   --name pg-docker -e POSTGRES_PASSWORD=<pass> -d -p 5432:5432 -v <path to store data locally>:/var/lib/postgresql/data  douchy/pgsphere:12.0.1`
 
 The database can be accessed via:
 
